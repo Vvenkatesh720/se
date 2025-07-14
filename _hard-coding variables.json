@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "c0aa9ac8-bca8-484e-a687-47045d72441c",
+      "cell_type": "code",
+      "source": "import math\n\na = -0.5\nb = 4\nc = -3\nD = b**2 - 4*a*c\nif D < 0:\n    print(\"No real solution (discriminant < 0) — no event predicted.\")\nelse:\n    root1 = (-b + math.sqrt(D)) / (2*a)\n    root2 = (-b - math.sqrt(D)) / (2*a)\n    print(\"Predicted change points:\")\n    print(f\"Day 1: {root1}\")\n    print(f\"Day 2: {root2}\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Predicted change points:\nDay 1: 0.8377223398316205\nDay 2: 7.16227766016838\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "74030129-8a36-4e57-b0f1-937974267540",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "19c12145-8501-499e-84bb-bd316e4d2ebc",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}

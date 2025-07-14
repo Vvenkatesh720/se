@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "8fd18f44-aa15-4ba0-9c46-db71e5bb3f4b",
+      "cell_type": "code",
+      "source": "import math\n\nprint(\"Enter coefficients for the weather model (ax^2 + bx + c = 0):\")\n\na = float(input(\"Enter a: \"))   # User types e.g., 1\nb = float(input(\"Enter b: \"))   # User types e.g., -3\nc = float(input(\"Enter c: \"))   # User types e.g., -10\n\n# Calculate discriminant\nD = b**2 - 4*a*c\n\nif D < 0:\n    print(\"No real solution — weather event does not occur within model bounds.\")\nelse:\n    root1 = (-b + math.sqrt(D)) / (2*a)\n    root2 = (-b - math.sqrt(D)) / (2*a)\n    print(\"Predicted change points:\")\n    print(f\"x1 = {root1}\")\n    print(f\"x2 = {root2}\")\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Enter coefficients for the weather model (ax^2 + bx + c = 0):\n"
+        },
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter a:  1\nEnter b:  -3\nEnter c:  -10\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Predicted change points:\nx1 = 5.0\nx2 = -2.0\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "8a4d5a7c-05dc-4a60-a2ce-84066339a40c",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "ad9b8c2c-20de-4865-bbe8-19389e35180c",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
