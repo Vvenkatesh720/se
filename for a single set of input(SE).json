@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "46da103d-fe2c-45e3-9879-f9ad5f64150f",
+      "cell_type": "code",
+      "source": "#for a single set of input\nprint(\"Quadratic Temperature Model: T(t) = a*t^2 + b*t + c\")\na = float(input(\"Enter coefficient a: \"))\nb = float(input(\"Enter coefficient b: \"))\nc = float(input(\"Enter coefficient c: \"))\nt = int(input(\"Enter the hour (0 to 24) to calculate temperature: \"))\ntemperature = a * (t ** 2) + b * t + c\nprint(f\"\\nAt hour {t}, the temperature is: {temperature:.2f}°C\")\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Quadratic Temperature Model: T(t) = a*t^2 + b*t + c\n"
+        },
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter coefficient a:  -0.3\nEnter coefficient b:  3.3\nEnter coefficient c:  18\nEnter the hour (0 to 24) to calculate temperature:  15\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "\nAt hour 15, the temperature is: 0.00°C\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "31f318d9-4311-4327-b188-afd02f8a5327",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
