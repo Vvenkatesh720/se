@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "cb2766ee-87e0-41af-85cd-268cd6cb5410",
+      "cell_type": "code",
+      "source": "#multiple sets of inputs\nn = int(input(\"Enter the number of input sets: \"))\nt = int(input(\"Enter the hour (0 to 24) to calculate temperature for all sets: \"))\n\nprint(\"\\nResults:\")\nprint(\"Set\\t a\\t b\\t c\\t Temperature (°C)\")\nprint(\"-\" * 50)\nfor i in range(1, n + 1):\n    print(f\"\\nEnter coefficients for Set {i}:\")\n    a = float(input(\"  Enter a: \"))\n    b = float(input(\"  Enter b: \"))\n    c = float(input(\"  Enter c: \"))\n    temp = a * (t ** 2) + b * t + c\n    print(f\"{i}\\t {a:.2f}\\t {b:.2f}\\t {c:.2f}\\t {temp:.2f}\")\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter the number of input sets:  2\nEnter the hour (0 to 24) to calculate temperature for all sets:  3\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "\nResults:\nSet\t a\t b\t c\t Temperature (°C)\n--------------------------------------------------\n\nEnter coefficients for Set 1:\n"
+        },
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "  Enter a:  -0.3\n  Enter b:  3.3\n  Enter c:  20\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "1\t -0.30\t 3.30\t 20.00\t 27.20\n\nEnter coefficients for Set 2:\n"
+        },
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "  Enter a:  -0.4\n  Enter b:  4.4\n  Enter c:  18\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "2\t -0.40\t 4.40\t 18.00\t 27.60\n"
+        }
+      ],
+      "execution_count": 2
+    },
+    {
+      "id": "3b123bc8-37b3-465b-a08d-e36c91fda812",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
